@@ -21,8 +21,7 @@
                   </div>
                   <h2 class="slider__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
                   <div class="slider__meta">
-                    <span class="slider__date"><time datetime="{{ post.date | date_to_xmlschema }}"><i
-                          class="ion ion-ios-calendar"></i>
+                    <span class="slider__date"><time datetime="{{ post.date | date_to_xmlschema }}"><i class="fas fa-calendar-alt"></i>
                         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}{{ post.date | date: date_format }}</time>
                     </span>
                   </div>
@@ -33,8 +32,8 @@
             {% endfor %}
           </div>
           <ul class="slider__nav list-reset">
-            <li class="slider__nav-prev"><i class="prev ion ion-ios-arrow-back"></i></li>
-            <li class="slider__nav-next"><i class="next ion ion-ios-arrow-forward"></i></li>
+            <li class="slider__nav-prev"><i class="fas fa-chevron-left"></i></li>
+            <li class="slider__nav-next"><i class="fas fa-chevron-right"></i></li>
           </ul>
         </div>
       </div>

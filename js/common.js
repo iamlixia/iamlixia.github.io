@@ -120,7 +120,7 @@ $(document).ready(function() {
         $grid.masonry('layout');
       });
 
-      $load_posts_button.text('Load more ').append('<i class="ion ion-ios-arrow-down"></i>');
+      $load_posts_button.text('Load more ').append('<i class="fas fa-chevron-down"></i>');
       pagination_next_page_number++;
 
       if (pagination_next_page_number > pagination_available_pages_number) {

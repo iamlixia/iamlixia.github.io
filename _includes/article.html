@@ -22,6 +22,6 @@
   <p class="article__excerpt">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncate: 150 }}{% endif %}</p>
 
   <div class="article__meta">
-    <span class="article__date"><time datetime="{{ post.date | date_to_xmlschema }}"><i class="ion ion-ios-calendar"></i> {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}{{ post.date | date: date_format }}</time></span>
+    <span class="article__date"><time datetime="{{ post.date | date_to_xmlschema }}"><i class="fas fa-calendar-alt"></i> {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}{{ post.date | date: date_format }}</time></span>
   </div>
 </div>
